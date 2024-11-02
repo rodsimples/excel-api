@@ -1,4 +1,4 @@
-{
+{{
   "name": "excel_manager_web",
   "version": "1.0.0",
   "main": "index.js",
@@ -15,6 +15,6 @@
     "nodemon": "^3.0.1"
   },
   "engines": {
-    "node": ">=16.x"
+    "node": "16.x"
   }
 }

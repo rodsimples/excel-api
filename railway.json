@@ -1,11 +1,7 @@
 {
   "schema": 2,
   "build": {
-    "builder": "DOCKERFILE",
-    "watchPatterns": [
-      "/app/src/**",
-      "/app/package.json"
-    ]
+    "builder": "NIXPACKS"
   },
   "deploy": {
     "startCommand": "npm start",
