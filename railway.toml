@@ -1,9 +1,11 @@
+# railway.toml
+
 [build]
-builder = "NIXPACKS"
-buildCommand = "npm install"
+  command = "npm install --omit=dev && npm run build" # Comando para construir sua aplicação
 
 [deploy]
-startCommand = "npm start"
-healthcheckPath = "/health"
-healthcheckTimeout = 300
-restartPolicyType = "ON_FAILURE"
+  command = "npm start" # Comando para iniciar sua aplicação
+
+[env]
+  PORT = "3001" # Definindo a porta que sua aplicação usará
+  NODE_ENV = "production" # Definindo o ambiente como produção

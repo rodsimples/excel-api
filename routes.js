@@ -2,7 +2,7 @@ const express = require('express');
 const multer = require('multer');
 const router = express.Router();
 const upload = multer({ dest: 'uploads/' });
-const ExcelManager = require('./excelManager'); // Classe que você criará para a lógica do Excel
+const ExcelManager = require('./excelManager'); // Certifique-se de que este caminho está correto
 const excelManager = new ExcelManager();
 
 // 1. Carregar arquivos Excel
@@ -67,4 +67,4 @@ router.delete('/clear', (req, res) => {
     }
 });
 
-module.exports = router;
+module.exports = router; // Certifique-se de que esta linha está presente
